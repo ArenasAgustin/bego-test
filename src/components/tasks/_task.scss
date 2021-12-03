@@ -1,0 +1,95 @@
+.tasks__container {
+    width: 100%;
+    height: 100%;
+    margin: 2em auto;
+
+    .tasks__title {
+        font-size: .85em;
+        font-weight: 500;
+
+        & span {
+            font-size: 1.1em;
+            font-weight: 500;
+            margin: 0 .5em;
+            color: #7d8082;
+        }
+    }
+
+    .tasks__card-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        width: 100vw;
+        height: 100%;
+        padding: .5em 0;
+        filter: drop-shadow(.5em 1em .3em black);
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .task__card {
+            background-color: #10161c;
+            border-radius: .5em;
+            width: 9rem;
+            height: 5.8rem;
+            margin-right: 1em;
+            box-shadow: .1em .1em .1em 0 #24272b inset;
+            -webkit-box-shadow: .1em .1em .1em 0 #24272b inset;
+            -moz-box-shadow: .1em .1em .1em 0 #24272b inset;
+            padding: 1em .6em 0 1.2em;
+
+            .task__card-title {
+                font-size: .85em;
+                font-weight: 600;
+            }
+
+            .task__card-name {
+                font-size: .7em;
+                font-weight: 600;
+                color: #7d8082;
+            }
+
+            .task__card-progress-txt {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                color: #7d8082;
+                font-size: .7em;
+                margin-top: .5em;
+            }
+
+            .task__card-progress {
+                background-color: #7d8082;
+                border-radius: 1em;
+                width: 100%;
+                height: .3em;
+                vertical-align: .2em;
+
+                &::-webkit-progress-bar {
+                    background-color: #7d8082;
+                    border-radius: 1em;
+                }
+
+                &::-webkit-progress-value {
+                    background-color: #f4b600   ;
+                    border-radius: 1em;
+                }
+
+                &::-moz-progress-bar {
+                    background-color: #f4b600;
+                    border-radius: 1em;
+                }
+            }
+
+            .task__card-day {
+                font-size: .55em;
+                font-weight: 600;
+                color: #7d8082;
+                text-align: end;
+            }
+        }
+    }
+}

@@ -28,9 +28,44 @@
         }
 
         .nav__icons-title {
-            font-size: 1.2em;
-            font-weight: 500;
+            font-size: 1em;
+            font-weight: 600;
             padding: 0;
+        }
+    }
+
+    .nav__create{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        margin: 3em 0;
+
+        .nav__create-txt {
+            font-size: 1em;
+            font-weight: 500;
+            color: #f4b600;
+        }
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .nav__list-item{
+            font-size: .85em;
+            font-weight: 600;
+            padding-right: .7em;
+            
+            &.selected{
+                font-size: .9em;
+                color: #f4b600;
+                border-bottom: .15em solid #f4b600;
+            }
         }
     }
 }
