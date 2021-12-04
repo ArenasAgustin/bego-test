@@ -1,3 +1,14 @@
+$breakpoints:(sm: 540px,
+    md: 768px,
+    xl: 1200px,
+);
+
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
 .value-card {
     display: flex;
     flex-direction: column;
@@ -5,6 +16,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 345px;
     height: 23.5em;
     background-color: #10161c;
     border-radius: 1em;
@@ -13,6 +25,18 @@
     -moz-box-shadow: .1em -.1em .2em 0 #24272b inset;
     position: relative;
     margin: 1em 0;
+
+    @include media-up(md) {
+        height: 24em;
+        margin: .5em 0;
+        margin-left: auto;
+    }
+
+    @include media-up(xl) {
+        max-width: 380px;
+        margin: 2em auto;
+        margin-bottom: 0;
+    }
 
     &:after {
         content: "";
@@ -34,13 +58,19 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 2em;
+        padding: 2em .5em;
         z-index: 2;
+        font-size: 1em;
+
+        @include media-up(sm) {
+            padding: 2em;
+            font-size: 1.1em;
+        }
 
         .value-card__nav-bar-item {
-            font-size: 1.1em;
             font-weight: 600;
             padding-right: .7em;
+            cursor: pointer;
 
             &.selected {
                 color: #f4b600;
@@ -97,9 +127,14 @@
                 height: .7em;
                 border-radius: 50%;
                 position: absolute;
-                top: 6%;
-                left: 74%;
+                top: 2%;
+                left: 71%;
                 z-index: 2;
+
+                @include media-up(sm) {
+                    top: 6%;
+                    left: 74%;
+                }
             }
 
             .value-card__img-line {
@@ -108,7 +143,12 @@
                 height: 9em;
                 background-color: #7d8082;
                 top: 7%;
-                left: 75%;
+                left: 73%;
+
+                @include media-up(sm) {
+                    top: 7%;
+                    left: 75%;
+                }
             }
         }
     }

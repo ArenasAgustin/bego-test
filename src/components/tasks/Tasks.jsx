@@ -37,6 +37,54 @@ export default function Tasks() {
 
                     <p className="task__card-day">3 days left</p>
                 </div>
+
+                <div className="task__card extras">
+                    <p className="task__card-title">Order #890PO90</p>
+
+                    <p className="task__card-name">Marcus Klaus</p>
+
+                    <div className="task__card-progress-txt">
+                        <p className="task__card-txt">Progress</p>
+
+                        <p className="task__card-percentage">20%</p>
+                    </div>
+
+                    <progress className="task__card-progress" max='100' value='20'></progress>
+
+                    <p className="task__card-day">3 days left</p>
+                </div>
+                
+                <div className="task__card extras">
+                    <p className="task__card-title">Order #890PO90</p>
+
+                    <p className="task__card-name">Marcus Klaus</p>
+
+                    <div className="task__card-progress-txt">
+                        <p className="task__card-txt">Progress</p>
+
+                        <p className="task__card-percentage">20%</p>
+                    </div>
+
+                    <progress className="task__card-progress" max='100' value='20'></progress>
+
+                    <p className="task__card-day">3 days left</p>
+                </div>
+                
+                <div className="task__card extras2">
+                    <p className="task__card-title">Order #890PO90</p>
+
+                    <p className="task__card-name">Marcus Klaus</p>
+
+                    <div className="task__card-progress-txt">
+                        <p className="task__card-txt">Progress</p>
+
+                        <p className="task__card-percentage">20%</p>
+                    </div>
+
+                    <progress className="task__card-progress" max='100' value='20'></progress>
+
+                    <p className="task__card-day">3 days left</p>
+                </div>
             </div>
         </div>
     );

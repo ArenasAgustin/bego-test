@@ -5,15 +5,47 @@ $card-color: #10161c;
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
+$breakpoints:(sm: 540px,
+  md: 768px,
+  lg: 880px,
+  xl: 1200px,
+);
+
+@mixin media-up($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background-color: #040b11;
   color: #ffffff;
   padding: 2em;
+  padding-bottom: 0;
   width: calc(100% - 4em);
+  max-width: 1300px;
   overflow-y: scroll;
   overflow-x: hidden;
+
+  @include media-up(md) {
+    padding: 2em auto;
+    padding-bottom: 0;
+  }
+
+  @include media-up(lg) {
+    padding: 2.5em 3em;
+    padding-bottom: 0;
+    width: calc(100% - 6em);
+  }
 }
 
 code {
