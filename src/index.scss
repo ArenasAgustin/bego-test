@@ -8,11 +8,12 @@ $card-color: #10161c;
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: $background-color;
-  color: $txt-color;
+  background-color: #040b11;
+  color: #ffffff;
   padding: 2em;
   width: calc(100% - 4em);
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 code {
