@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import back from "../../assets/back.svg";
-import notification from "../../assets/notification.svg";
 import './_navbar.scss';
+
+const back = "https://res.cloudinary.com/df7zuvuxu/image/upload/v1638969455/back_t9sqew.svg";
+const notification = "https://res.cloudinary.com/df7zuvuxu/image/upload/v1638969453/notification_lku4qc.svg";
 
 export default function NavBar() {
     const [isSelected, setIsSelected] = useState([true, false, false, false]);

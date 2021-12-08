@@ -1,11 +1,12 @@
 import React from "react";
-import download from "../../assets/download.svg";
-import clock from "../../assets/clock.svg";
-import flash from "../../assets/flash.svg";
-import menu from "../../assets/menu.svg";
-import view from "../../assets/view.svg";
-import checked from "../../assets/checked.svg";
 import './_statistic.scss';
+
+const download = "https://res.cloudinary.com/df7zuvuxu/image/upload/v1638969453/download_xdzbkx.svg";
+const clock = 'https://res.cloudinary.com/df7zuvuxu/image/upload/v1638969455/clock_bz5gxk.svg';
+const flash = "https://res.cloudinary.com/df7zuvuxu/image/upload/v1638969453/flash_izlehd.svg";
+const menu = "https://res.cloudinary.com/df7zuvuxu/image/upload/v1638969453/menu_h4g30p.svg";
+const view = "https://res.cloudinary.com/df7zuvuxu/image/upload/v1638969453/view_tihg2f.svg";
+const checked = "https://res.cloudinary.com/df7zuvuxu/image/upload/v1638969455/checked_v4ryvh.svg";
 
 export default function Statistic() {
     return (
